@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+  background-image: url('10.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(320deg, #58dc8c, #41e77f,#8487f5 );
+
+
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                height:100vh;
+            }
+            .game{
+                border-radius:10px;
+                padding:20px;
+                width:600px;
+                background-repeat: no-repeat;
+                
+               
+            }
+            .game img{
+            
+                width:30%;
+                margin-right:10px;
+                cursor:pointer;
+                
+                 
+            }
+        </style>
+         <title></title>
+         <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+         <div class="game">
+         <div class="result">
+             <h3 class="pCount">Player:0</h3>
+             <h3 class="cCount">Computer:0</h3>
+         </div>
+              <div class="choice">
+                   <img src="1.png" onclick="play('paper')">
+                   <img src="2.png" onclick="play('rock')">
+                   <img src="3.png" onclick="play('scissors')">
+              </div>
+              <div class="players">
+                  <p class="player">Players choice:</p>
+                  <p class="computer">Computers choice:</p>
+                  <p class="winner"></p>
+              </div>
+          </div>
+         <script src="app.js"></script>
+    </body>
+</html>
